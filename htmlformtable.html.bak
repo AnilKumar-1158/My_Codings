@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login table</title>
+<style type="text/css">
+
+
+</style>
+</head>
+<body>
+<div>
+	<div><h1 class="anil">LOGIN FORM</h1></div>
+	<div>
+		<form>
+		<div>
+		<div>Username:</div>
+	<div><input type="text" name="us"></div>
+	</div>
+	<div>Password:</div>
+	<div><input type="password" name="ps"></div>
+	</div>
+	</div>
+	</div>
+	</form>
+	<p class="redtext" >the text will be in red color </p>
+	<p class="boldtext">the text will be in bold </p>
+	<p class="redtext boldtext">the text will be in bold withred color </p>
+</div>
+</body>
+</html>
