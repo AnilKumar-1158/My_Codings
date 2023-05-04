@@ -1,4 +1,5 @@
 list:
  values:one,two,three
 connection: ememdokkdoek
- 
+
+spring.cloud.config.server.git.default-label: main
