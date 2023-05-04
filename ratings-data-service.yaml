@@ -2,7 +2,7 @@ spring:
  application:
   name: ratings-data-service
 server: 
- port: 8083
+ port: 8010
 
  
 resilience4j:
