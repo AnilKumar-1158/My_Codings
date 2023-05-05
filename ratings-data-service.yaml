@@ -1,8 +1,4 @@
-spring.config.import: configserver:http://localhost:9999
 
-spring:
- application:
-  name: ratings-data-service
   
   
 server:
