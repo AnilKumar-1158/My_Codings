@@ -1,5 +1,5 @@
-eniwehuiew=webuwiedhue
-dhewuhd=dnewuidhuei
+eniwehuiew: webuwiedhue
+dhewuhd: dnewuidhuei
 spring:
  application:
   name: ratings-data-service
