@@ -1,10 +1,10 @@
 spring:
  application:
-  name: ratings-data-service
+  name: movie-info-service
   
   
 server:
- port: 8083
+ port: 8082
  
 management:
   health:
@@ -21,7 +21,7 @@ management:
 resilience4j:
  circuitbreaker:
    instances:
-    ratings-data-service:
+    movie-info-service:
      registerHealthIndicator: true
      eventConsumerBufferSize: 10
      failureRateThreshold: 60
