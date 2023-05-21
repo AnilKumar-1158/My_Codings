@@ -1,3 +1,15 @@
-
+spring:
+logging:
+  file:
+   name: logs/error.log
+  level:
+    root: info
+    com.infgo.*: info
+  level:
+   root: error
+   com.infy.utility.*: error
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss,SSS}-- %5p [%t] %c  [%M] --> %m%n"
+    console: "%d{yyyy-MM-dd HH:mm:ss,SSS}-- %5p [%t] %c [%M] --> %m%n"
 server:
  port: 8100
