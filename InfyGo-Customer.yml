@@ -4,7 +4,7 @@ logging:
    name: logs/error.log
   level:
     root: error
-    com.infgo.utility.*: error
+    com.infgo: error
   pattern:
     file: "%d{yyyy-MM-dd HH:mm:ss,SSS}-- %5p [%t] %c  [%M] --> %m%n"
     console: "%d{yyyy-MM-dd HH:mm:ss,SSS}-- %5p [%t] %c [%M] --> %m%n"
