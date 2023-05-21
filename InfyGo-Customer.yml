@@ -1,7 +1,7 @@
 spring:
 logging:
   file:
-   name: logs/error.log
+   name: Customer-Loga/InfoLevel.log
   level:
     root: info
     com.infgo: info
