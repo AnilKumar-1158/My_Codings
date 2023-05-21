@@ -1,10 +1,11 @@
-
+spring:
 logging:
-  file: Errorlog.log
+  file: Log/Errorlog.log
   level:
     root: info
-    com.infoys.ars: info
+    com.infgo.*: info
   pattern:
-    file: "%d{yyyy-MM-dd HH:mm:ss,SSS} %5p [%t] %c [%M] - %m%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss,SSS}-- %5p [%t] %c Method [%M] --> %m%n"
+    console: "%d{yyyy-MM-dd HH:mm:ss,SSS}-- %5p [%t] %c Method [%M] --> %m%n"
 server:
  port: 8100
