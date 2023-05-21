@@ -3,7 +3,7 @@ logging:
   file:
    name: logs/error.log
   level:
-    root: info
+    root: error
     com.infgo.utility.*: error
   pattern:
     file: "%d{yyyy-MM-dd HH:mm:ss,SSS}-- %5p [%t] %c  [%M] --> %m%n"
