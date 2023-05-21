@@ -1,14 +1,4 @@
-spring:
-  logging:
-  file:
-   name: Logs/InfoLevel.log
-  level:
-    root: info
-   
-    com.infygo.utility: info
-  pattern:
-    file: "%d{yyyy-MM-dd HH:mm:ss,SSS} --> %5p [%t] %c  [%M] --> %m%n"
-    console: "%d{yyyy-MM-dd HH:mm:ss,SSS} --> %5p [%t] %c{Class,package,method} [%M] --> %m%n"
+
 spring:
   datasource:
     username: root
