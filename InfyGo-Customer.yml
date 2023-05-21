@@ -1,6 +1,6 @@
 spring:
 logging:
-  file: Log/Errorlog.log
+  file: logs/error.log
   level:
     root: info
     com.infgo.*: info
