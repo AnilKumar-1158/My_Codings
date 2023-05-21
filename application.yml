@@ -1,6 +1,6 @@
 
 Spring:
-  logging:
+logging:
   file:
    name: Logs/InfoLevel.log
   level:
