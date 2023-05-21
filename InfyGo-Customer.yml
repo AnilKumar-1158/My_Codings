@@ -4,8 +4,8 @@ logging:
    name: customer-logs/InfoLevel.log
   level:
     root: info
-    com.infgo: info
-    com.infygo.utility: error
+   
+    com.infygo.utility: info
   pattern:
     file: "%d{yyyy-MM-dd HH:mm:ss,SSS} --> %5p [%t] %c  [%M] --> %m%n"
     console: "%d{yyyy-MM-dd HH:mm:ss,SSS} --> %5p [%t] %c [%M] --> %m%n"
