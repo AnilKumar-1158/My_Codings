@@ -1,3 +1,16 @@
 
 server:
  port: 8400
+resilience4j:
+ circuitbreaker:
+   instances:
+    ticket-service:
+     registerHealthIndicator: true
+     eventConsumerBufferSize: 10
+     failureRateThreshold: 60
+     minimumNumberOfCalls: 10
+     automaticTransitionFromOpenToHalfOpenEnabled: true
+     waitDurationInOpenState: 3s
+     permittedNumberOfCallsInHalfOpenState: 2
+     slidingWindowSize: 10
+     slidingWindowType: COUNT_BASED
