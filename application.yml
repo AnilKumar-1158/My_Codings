@@ -1,4 +1,15 @@
-
+management:
+  health:
+   circuitbreakers:
+    enabled: true
+  endpoints:
+   web:
+    exposure:
+     include: "*"
+  endpoint:
+   health:
+    show-details: always
+    
 logging:
   file:
    name: Logs/InfoLevel.log
@@ -22,17 +33,6 @@ Spring:
       properties:
         hibernate:
             dialect: org.hibernate.dialect.MySQL8Dialect
- management:
-  health:
-   circuitbreakers:
-    enabled: true
-  endpoints:
-   web:
-    exposure:
-     include: "*"
-  endpoint:
-   health:
-    show-details: always
-    
+ 
 
 
