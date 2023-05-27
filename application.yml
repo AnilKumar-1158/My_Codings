@@ -22,4 +22,29 @@ Spring:
       properties:
         hibernate:
             dialect: org.hibernate.dialect.MySQL8Dialect
+ management:
+  health:
+   circuitbreakers:
+    enabled: true
+  endpoints:
+   web:
+    exposure:
+     include: "*"
+  endpoint:
+   health:
+    show-details: always
+    
+resilience4j:
+ circuitbreaker:
+   instances:
+    ratings-data-service:
+     registerHealthIndicator: true
+     eventConsumerBufferSize: 10
+     failureRateThreshold: 60
+     minimumNumberOfCalls: 10
+     automaticTransitionFromOpenToHalfOpenEnabled: true
+     waitDurationInOpenState: 3s
+     permittedNumberOfCallsInHalfOpenState: 2
+     slidingWindowSize: 10
+     slidingWindowType: COUNT_BASED
 
