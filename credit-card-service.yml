@@ -1,4 +1,16 @@
-
+resilience4j:
+ circuitbreaker:
+   instances:
+    credit-card-service:
+     registerHealthIndicator: true
+     eventConsumerBufferSize: 10
+     failureRateThreshold: 60
+     minimumNumberOfCalls: 10
+     automaticTransitionFromOpenToHalfOpenEnabled: true
+     waitDurationInOpenState: 3s
+     permittedNumberOfCallsInHalfOpenState: 2
+     slidingWindowSize: 10
+     slidingWindowType: COUNT_BASED
 
 server:
  port: 8500
