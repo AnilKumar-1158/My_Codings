@@ -20,7 +20,6 @@ logging:
   pattern:
     file: "%d{yyyy-MM-dd HH:mm:ss,SSS} --> %5p [%t] %c  [%M] --> %m%n"
 
-    console: "%d{yyyy-MM-dd HH:mm:ss,SSS} --> %5p [%t] %c{Class,package,method} [%M] --> %m%n"
 Spring:
   datasource:
     username: root
