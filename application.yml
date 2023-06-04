@@ -20,8 +20,7 @@ logging:
   pattern:
     file: "%d{yyyy-MM-dd HH:mm:ss,SSS} --> %5p [%t] %c  [%M] --> %m%n"
 
-    console: "%5p [${spring.zipkin.service.name:${spring.application.name:-}},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] [%X{ddd:-},%X{bp:-},%X{bpids:-}] [%X{op:-},%X{chunk:-},%X{i:-}]"
-
+    console: "%d{yyyy-MM-dd HH:mm:ss,SSS} --> %5p [%t] %c{Class,package,method} [%M] --> %m%n"
 Spring:
   datasource:
     username: root
