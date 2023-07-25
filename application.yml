@@ -10,15 +10,15 @@ management:
    health:
     show-details: always
    
-logging:
-  file:
-   name: Logs/InfoLevel.log
-  level:
-    root: info
+# logging:
+#   file:
+#    name: Logs/InfoLevel.log
+#   level:
+#     root: info
    
-    com.infygo.utility: info
-  pattern:
-    file: "%d{yyyy-MM-dd HH:mm:ss,SSS} --> %5p [%t] %c  [%M] --> %m%n"
+#     com.infygo.utility: info
+#   pattern:
+#     file: "%d{yyyy-MM-dd HH:mm:ss,SSS} --> %5p [%t] %c  [%M] --> %m%n"
 
 Spring:
   datasource:
